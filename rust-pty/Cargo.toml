@@ -14,8 +14,8 @@ codegen-units = 1
 crate-type = ["cdylib"]
 
 [dependencies]
-# https://github.com/wezterm/wezterm/issues/6783
-portable-pty = { version = "0.8.1", features = ["serde_support"] }
+# ponytail: pinned fork adds CREATE_NO_WINDOW; update deliberately when upstream catches up.
+portable-pty = { git = "https://github.com/ryancole03/wezterm.git", rev = "6e4d5b3b", features = ["serde_support"] }
 lazy_static = "1.4"
 crossbeam = { version = "0.8.4", features = ["crossbeam-channel"] }
 serde = { version = "1.0", features = ["derive"] }
