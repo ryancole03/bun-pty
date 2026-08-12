@@ -15,7 +15,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 # ponytail: pinned fork adds CREATE_NO_WINDOW; update deliberately when upstream catches up.
-portable-pty = { git = "https://github.com/ryancole03/wezterm.git", rev = "6e4d5b3b", features = ["serde_support"] }
+portable-pty = { git = "https://github.com/ryancole03/wezterm.git", rev = "c02fe9b4d", features = ["serde_support"] }
 lazy_static = "1.4"
 crossbeam = { version = "0.8.4", features = ["crossbeam-channel"] }
 serde = { version = "1.0", features = ["derive"] }
